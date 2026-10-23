@@ -1,0 +1,18 @@
+[project]
+name = "it-support-ticket-logger"
+version = "1.1.0"
+description = "Command-line help desk that logs IT support tickets to SQLite"
+requires-python = ">=3.10"
+authors = [{ name = "Quentin Bombande" }]
+license = { text = "MIT" }
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+addopts = "-q"
